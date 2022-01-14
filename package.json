@@ -2,11 +2,14 @@
   "name": "gtao-discounts-bot",
   "version": "1.0.0",
   "description": "Discord bot consuming the GTA: Online discounts API",
-  "main": "dist/bot.js",
+  "main": "bot.js",
+  "engines": {
+    "node": ">=16.13.0"
+  },
   "scripts": {
     "start": "node dist/bot.js",
-    "dev": "ts-node src/bot.ts",
-    "build": "tsc"
+    "postinstall": "tsc",
+    "dev": "ts-node src/bot.ts"
   },
   "repository": {
     "type": "git",
